@@ -4,3 +4,8 @@ En este repositorio vamos a alojar todos los repositorios que vayamos desarrolla
 -git
 -Visual Studio Code
 -Extensiones de Visual STudio Code: CSS Peek, Autoclose tags, Material Icon Theme, Spanish Lenguage Pack, Javascript ES6 Snippets, etx.
+En el primer tema vamos a tabajar con Markdown, que es un lenguaje sncillo de marcado. Nos interesa conocer lo siguiente: 
+1. Extensiomn de los archivos Markdown (.md)
+2. Como escribir titulos y subtitulos
+3. Como crear listas no numeradas y numeradas
+4. Establecer enlaces como este [este](https://markdown.es/)
