@@ -8,4 +8,4 @@ En el primer tema vamos a tabajar con Markdown, que es un lenguaje sncillo de ma
 1. Extensiomn de los archivos Markdown (.md)
 2. Como escribir titulos y subtitulos
 3. Como crear listas no numeradas y numeradas
-4. Establecer enlaces como este [este](https://markdown.es/)
+4. Establecer enlaces como [este](https://markdown.es/)
