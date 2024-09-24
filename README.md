@@ -1,1 +1,2 @@
-# LM-24-25
+# Repositiorio de Lenguaje de Marcas 2024/25
+## Autor: Niolcás García Peciña
