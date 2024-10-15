@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pago</title>
+</head>
+<body>
+    <fieldset>
+        Formulario de pago
+        <fieldset>
+            <legend>Información de contacto</legend>
+            <fieldset>
+                <legend>Profesión</legend>
+                <input type="radio" name="profesion" value="profesor/a" id="">Profesor/a<br>
+                <input type="radio" name="profesion" value="estudiante" id="">Estudiante <br>
+                <input type="radio" name="profesion" value="otro" id="">Otro <br>
+            </fieldset>
+            <BR></BR>
+            <fieldset>
+                <legend>Tratamiento</legend>
+                <input type="radio" name="tratamiento" value="Sr/Sra" id="">Sr/Sra<br>
+                <input type="radio" name="tratamiento" value="Dr/Dra" id="">Dr/Dra <br>
+                <input type="radio" name="tratamiento" value="otro" id="">Otro <br>
+            </fieldset>
+            <br>
+            <label for="name">Nombre:*</label><br>
+            <input type="text" name="nombre" id=""> <br>
+            <label for="correo">Correo:*</label><br>
+            <input type="text" name="correo" id=""><br>
+            <label for="telefono">Número de telefono:*</label><br>
+            <input type="text" name="telefono" id=""><br>
+            <label for="contraseña">Contraseña:*</label><br>
+            <input type="text" name="contraseña" id=""><br>
+            <br>
+            <fieldset>
+                <legend>  Información de pago</legend>
+            <label for="tarjeta">Tipo de tarjeta:</label>
+            <select name="tarejta" id="">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american">American Express</option>
+            </select><br>
+            <label for="ntarjeta">Número de tarjeta:*</label><br>
+            <input type="text" name="ntarjeta" id=""><br>
+            <label for="caducidad">Fecha de caducidad:* </label><br>
+            <input type="date" name="caducidad" id=""><br>
+            <label for="paypal">Cuenta de paypal:*</label><br>
+            <input type="text" name="paypal" id=""><br>
+            <label for="metodo">Método de pago preferido:</label>
+            <select name="metodo" id="">
+                <option value="credito">Tarjeta de crédito</option>
+                <option value="paypal">Paypal</option>
+            </select>
+            <br>
+            <button type="submit">Validar el pago</button>
+            </fieldset>
+        </fieldset>
+    </fieldset>
+</body>
+</html>
