@@ -6,14 +6,18 @@
     <title>Formulario de pago</title>
 </head>
 <body>
+    <form>
     <fieldset>
         Formulario de pago
         <fieldset>
             <legend>Información de contacto</legend>
             <fieldset>
                 <legend>Profesión</legend>
+                <label for="profesor/a"></label>
                 <input type="radio" name="profesion" value="profesor/a" id="">Profesor/a<br>
+                <label for="estudiante"></label>
                 <input type="radio" name="profesion" value="estudiante" id="">Estudiante <br>
+                <label for="otro"></label>
                 <input type="radio" name="profesion" value="otro" id="">Otro <br>
             </fieldset>
             <BR></BR>
@@ -24,14 +28,14 @@
                 <input type="radio" name="tratamiento" value="otro" id="">Otro <br>
             </fieldset>
             <br>
-            <label for="name">Nombre:*</label><br>
-            <input type="text" name="nombre" id=""> <br>
+            <label for="nombre">Nombre:*</label><br>
+            <input type="text" name="nombre" id="" required> <br>
             <label for="correo">Correo:*</label><br>
-            <input type="text" name="correo" id=""><br>
+            <input type="email" name="correo" id="" required><br>
             <label for="telefono">Número de telefono:*</label><br>
-            <input type="text" name="telefono" id=""><br>
+            <input type="tel" name="telefono" id="" required><br>
             <label for="contraseña">Contraseña:*</label><br>
-            <input type="text" name="contraseña" id=""><br>
+            <input type="password" name="contraseña" id="" required><br>
             <br>
             <fieldset>
                 <legend>  Información de pago</legend>
@@ -42,11 +46,11 @@
                 <option value="american">American Express</option>
             </select><br>
             <label for="ntarjeta">Número de tarjeta:*</label><br>
-            <input type="text" name="ntarjeta" id=""><br>
+            <input type="text" name="ntarjeta" id="" required><br>
             <label for="caducidad">Fecha de caducidad:* </label><br>
-            <input type="date" name="caducidad" id=""><br>
+            <input type="date" name="caducidad" id="" required><br>
             <label for="paypal">Cuenta de paypal:*</label><br>
-            <input type="text" name="paypal" id=""><br>
+            <input type="text" name="paypal" id="" required><br>
             <label for="metodo">Método de pago preferido:</label>
             <select name="metodo" id="">
                 <option value="credito">Tarjeta de crédito</option>
@@ -57,5 +61,6 @@
             </fieldset>
         </fieldset>
     </fieldset>
+</form>
 </body>
 </html>
