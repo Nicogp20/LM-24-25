@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+
+.parrafo {
+    font-size: 16px;
+    color: navy;
+    line-height: 1.5;
+}
+
+#especial {
+    font-size: 18px;
+    color: darkred;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+}
