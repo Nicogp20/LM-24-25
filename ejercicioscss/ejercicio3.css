@@ -1,0 +1,17 @@
+h3 {
+    text-align: left;
+    background-color: lightblue; 
+    padding: 10px;
+}
+
+.centrado {
+    text-align: center;
+    background-color: lightgreen; 
+    padding: 10px; 
+}
+
+#derecha {
+    text-align: right; 
+    background-color: lightcoral; 
+    padding: 10px; 
+}
