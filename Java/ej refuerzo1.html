@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de refuerzo 1</title>
+</head>
+<body>
+    <h1>Radio del circulo</h1>
+    <input type="text" id="radio" placeholder="Introduce el radio del circulo">
+    <button onclick="calcular_area()">Calcular área</button>
+    <p id="resultado"></p>
+    <script>
+        function calcular_area(){
+            let radio = parseFloat(document.getElementById("radio").value);
+            if (isNaN(radio))
+        {
+             document.getElementById("resultado").innerHTML = "Debes introducir valores correctos"
+        }
+        else {
+            let resultado = (3.14 * radio * radio)
+            document.getElementById("resultado").innerHTML = "El area del circulo es de "+resultado
+        }
+        }
+    </script>
+</body>
+</html>
