@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente</title>
+</head>
+<body>
+    <h1>Tu expediente academico</h1>
+    <div>
+        <div class="col">
+        <p>ISO</p>
+        <input type="text" id="iso" placeholder="Introduce tu nota"><br>
+        <p>Base de datos</p> 
+        <input type="text" id="base" placeholder="Introduce tu nota"><br>
+        <p>Lenguaje de marcas</p>
+        <input type="text" id="lenguaje" placeholder="Introduce tu nota"><br>
+        <p>Redes</p>
+        <input type="text" id="redes" placeholder="Introduce tu nota"><br>
+        </div>
+        <div class="col"></div>
+        <p>Sostenibilidad</p>
+        <input type="text" id="sostenibilidad" placeholder="Introduce tu nota"><br>
+        <p>FOL</p>
+        <input type="text" id="fol" placeholder="Introduce tu nota"><br>
+        <p>Digitalización</p>
+        <input type="text" id="digitalizacion" placeholder="Introduce tu nota"><br>
+        <p>Fundamento de hardware</p>
+        <input type="text" id="fundamento" placeholder="Introduce tu nota"><br>
+    </div>
+        <button onclick="nota_media()">Nota media</button>
+        <p id="resultado_nota"></p>
+        <button onclick="aprobado_suspenso">Aprobado/suspenso</button>
+        <p id="resultao_aprobao"></p> <p id="resultado_suspenso"></p>
+    </div>
+        <script>
+            function nota_media(){ 
+            let iso = parseFloat(document.getElementById("iso").value);
+            let base = parseFloat(document.getElementById("base").value);
+            let lenguaje = parseFloat(document.getElementById("lenguaje").value);
+            let redes = parseFloat(document.getElementById("redes").value);
+            let sostenibilidad = parseFloat(document.getElementById("sostenibilidad").value);
+            let fol = parseFloat(document.getElementById("fol").value);
+            let digitalizacion = parseFloat(document.getElementById("digitalizacion").value);
+            let fundamento = parseFloat(document.getElementById("fundamento").value);
+            if (isNaN(iso) || isNaN(base) || isNaN(lenguaje) || isNaN(redes) || isNaN(sostenibilidad) || isNaN(fol) || isNaN(digitalizacion) || isNaN(fundamento)) {
+                document.getElementById("resultado_nota").innerHTML = "Debes introducir valores correctos"
+            }
+            else {
+                let resultado_nota = (iso + base + redes + lenguaje + sostenibilidad + fol + digitalizacion + fundamento) / 8 
+                document.getElementById("resultado_nota").innerHTML = "Tu nota media es de " +resultado_nota
+            }
+            }
+            function resultao_aprobao(){
+            let iso = parseFloat(document.getElementById("iso").value);
+            let base = parseFloat(document.getElementById("base").value);
+            let lenguaje = parseFloat(document.getElementById("lenguaje").value);
+            let redes = parseFloat(document.getElementById("redes").value);
+            let sostenibilidad = parseFloat(document.getElementById("sostenibilidad").value);
+            let fol = parseFloat(document.getElementById("fol").value);
+            let digitalizacion = parseFloat(document.getElementById("digitalizacion").value);
+            let fundamento = parseFloat(document.getElementById("fundamento").value);
+            if (isNaN(iso) || isNaN(base) || isNaN(lenguaje) || isNaN(redes) || isNaN(sostenibilidad) || isNaN(fol) || isNaN(digitalizacion) || isNaN(fundamento)) {
+                document.getElementById("resultado_nota").innerHTML = "Debes introducir valores correctos"
+            }
+            else {
+                if ((iso>=5)) {
+                
+                }
+            }
+            }
+    </script>
+</body>
+</html>
