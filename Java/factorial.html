@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <h1>Calculadora factorial de un numero</h1>
+    <input type="text" id="numero" placeholder="Introduce un número">
+    <button onclick="calcular()">Pulsa</button>
+    <p id="resultado"></p>
+    <script>
+        function calcular(){
+            let numero = parseFloat(document.getElementById("numero").value);
+            if ((isNaN(numero)) || (numero<0)) {
+                document.getElementById("resultado").innerHTML = "Debes introducir valores correctos"
+            }
+            let factorial = 1
+            for (let i = 1; numero>=i; i++){
+                factorial *= i;
+                document.getElementById("resultado").innerHTML = factorial;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+Hola muy buenas, mi nombre es Nicolás García Peciña y tengo 20 años. Les escribo con motivo de hacer las prácticas de mi grado con vosotros, me han hablado bien de vuestra empresa y por lo que me han dicho aceptais gente de prácticas. Estoy en el primer año del grado superior ASIR (Administración de sistemas informáticos en red). Tengo ganas de aprender y poder progresar con la empreas. Muchas gracias por su atención, espero respuesta. Muchas gracias
