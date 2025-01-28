@@ -36,4 +36,3 @@ function media(){
         document.getElementById("resultado").innerHTML = mediaA;
     }
 }
-
